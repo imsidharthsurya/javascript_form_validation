@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            td{
+                padding: 15px;
+            }
+            .inp{
+                height: 20px;
+                width: 300px;
+            }
+            #sub{
+                padding: 12px 20px;
+                border-radius: 4px;
+                background-color: green;
+                color: white;
+                border-width: 0px;
+            }
+            #container{
+                width: 60%;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                padding-top: 6px;
+            }
+        </style>
+    </head>
+    <body>
+        <center><div id="container"><h1>Submit your job application</h1>
+        <table>
+            <form onsubmit=" return validateForm()">
+                <tr>
+                    <td><label>Name: </label></td>
+                    <td><input type="text" id="name" class="inp"><br>
+                    <span id="namesp"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Age: </label></td>
+                    <td><input type="text" id="age" class="inp"></td>
+                </tr>
+                
+                <tr>
+                    <td><label>Gender: </label></td>
+                    <td>
+
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="html">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="html">Female</label>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><label>Enter your Contact No.: </label></td>
+                    <td><input type="text" id="numbeer" class="inp"></td>
+                </tr>
+                <tr>
+                    <td><label>Address: </label></td>
+                    <td><textarea name="comment" rows="5" cols="39" id="addr"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label>Select Your Skills</label></td>
+                    <td><input type="checkbox" id="c++" name="skill" value="c++"><label>C++</label>
+                        <input type="checkbox" id="mern" name="skill" value="mern"><label>MERN</label>
+                        <input type="checkbox" id="java" name="skill" value="java"><label>JAVA</label>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Enter your Email: </label></td>
+                    <td><input type="text" id="email"  class="inp"></td>
+                </tr>
+                <tr>
+                    <td><label>Enter Your Password: </label></td>
+                    <td><input type="password" id="pwd1" class="inp"></td>
+                </tr>
+                <tr>
+                    <td><label>Confirm Your Password: </label></td>
+                    <td><input type="password" id="pwd2" class="inp"></td>
+                </tr>
+                <tr>
+                    <td><label>Upload Resume </label></td>
+                    <td><input type="file" id="uploadBox"></td>
+                </tr>
+                  <tr><td></td>  <td><input type="submit" id="sub"></td></tr>
+            </form>
+        </table>
+    </div>
+    </center><br>
+        <span id="txt"></span>
+        <script src="dom.js"></script>
+    </body>
+</html>
